@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="560" viewBox="0 0 1680 560">
+  <defs>
+    <filter id="glowCyan" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowSoft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowTitle" x="-30%" y="-60%" width="160%" height="220%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1680" height="560" fill="#050505"/>
+
+  <!-- circuit traces -->
+  <g fill="none" stroke="#0e7f96" stroke-width="3" opacity="0.85">
+    <path d="M0 100 H60 L100 60 H210"/>
+    <path d="M0 150 H90 L120 120 H190"/>
+    <path d="M0 470 H70 L110 510 H250"/>
+    <path d="M1680 140 H1620 L1580 100 H1470"/>
+    <path d="M1680 470 H1610 L1570 430 H1500"/>
+  </g>
+  <g fill="#0e7f96">
+    <circle cx="210" cy="60" r="5"/><circle cx="190" cy="120" r="5"/>
+    <circle cx="1470" cy="100" r="5"/><circle cx="1500" cy="430" r="5"/>
+  </g>
+  <g fill="none" stroke="#a3134f" stroke-width="3" opacity="0.85">
+    <path d="M470 500 H560 L600 460 H700"/>
+    <path d="M1000 505 H1090 L1130 470 H1230"/>
+    <path d="M1290 465 H1380 L1420 505 H1520"/>
+  </g>
+  <g fill="#a3134f">
+    <circle cx="470" cy="500" r="5"/><circle cx="1230" cy="470" r="5"/><circle cx="1520" cy="505" r="5"/>
+  </g>
+
+  <!-- ===== left icon cluster ===== -->
+  <!-- connectors from icons down to the server -->
+  <g fill="none" stroke="#00c8e0" stroke-width="3" filter="url(#glowSoft)">
+    <path d="M176 196 V232 H360 V196"/>
+    <path d="M268 196 V232"/>
+  </g>
+
+  <!-- icon 1: film / movie (yellow) -->
+  <g filter="url(#glowSoft)">
+    <circle cx="176" cy="150" r="46" fill="none" stroke="#ffc400" stroke-width="6"/>
+    <rect x="150" y="128" width="52" height="44" rx="4" fill="none" stroke="#ffc400" stroke-width="5"/>
+    <g fill="#ffc400">
+      <rect x="155" y="133" width="8" height="8" rx="1.5"/>
+      <rect x="155" y="159" width="8" height="8" rx="1.5"/>
+      <rect x="189" y="133" width="8" height="8" rx="1.5"/>
+      <rect x="189" y="159" width="8" height="8" rx="1.5"/>
+    </g>
+    <path d="M170 141 L188 150 L170 159 Z" fill="#ffc400"/>
+  </g>
+
+  <!-- icon 2: TV / series (magenta) -->
+  <g filter="url(#glowSoft)">
+    <circle cx="268" cy="150" r="46" fill="none" stroke="#ff1f8f" stroke-width="6"/>
+    <rect x="242" y="138" width="52" height="38" rx="5" fill="none" stroke="#ff1f8f" stroke-width="5"/>
+    <path d="M254 128 L268 138 L282 128" fill="none" stroke="#ff1f8f" stroke-width="5" stroke-linecap="round"/>
+    <rect x="252" y="148" width="22" height="4" rx="2" fill="#ff1f8f"/>
+    <rect x="252" y="158" width="32" height="4" rx="2" fill="#ff1f8f"/>
+  </g>
+
+  <!-- icon 3: download (cyan) -->
+  <g filter="url(#glowSoft)">
+    <circle cx="360" cy="150" r="46" fill="none" stroke="#00e5ff" stroke-width="6"/>
+    <path d="M360 126 V158" fill="none" stroke="#00e5ff" stroke-width="6" stroke-linecap="round"/>
+    <path d="M346 146 L360 160 L374 146" fill="none" stroke="#00e5ff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M338 172 H382" fill="none" stroke="#00e5ff" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- server / NAS chassis -->
+  <g filter="url(#glowCyan)">
+    <rect x="112" y="256" width="312" height="96" rx="12" fill="none" stroke="#00e5ff" stroke-width="6"/>
+    <rect x="96" y="278" width="16" height="52" rx="4" fill="none" stroke="#00e5ff" stroke-width="5"/>
+    <rect x="424" y="278" width="16" height="52" rx="4" fill="none" stroke="#00e5ff" stroke-width="5"/>
+    <rect x="130" y="276" width="44" height="56" rx="5" fill="none" stroke="#00e5ff" stroke-width="5"/>
+  </g>
+  <!-- drive bays -->
+  <g fill="none" stroke="#00e5ff" stroke-width="4" opacity="0.95">
+    <rect x="196" y="286" width="24" height="36" rx="3"/>
+    <rect x="228" y="286" width="24" height="36" rx="3"/>
+    <rect x="260" y="286" width="24" height="36" rx="3"/>
+    <rect x="292" y="286" width="24" height="36" rx="3"/>
+    <rect x="324" y="286" width="24" height="36" rx="3"/>
+  </g>
+  <!-- status leds -->
+  <g>
+    <circle cx="208" cy="338" r="5" fill="#ffc400"/>
+    <circle cx="240" cy="338" r="5" fill="#ffc400"/>
+    <circle cx="272" cy="338" r="5" fill="#00ff9c"/>
+    <circle cx="304" cy="338" r="5" fill="#00ff9c"/>
+    <circle cx="336" cy="338" r="5" fill="#ff1f8f"/>
+    <circle cx="392" cy="300" r="6" fill="#00ff9c"/>
+  </g>
+
+  <!-- outbound traces from server -->
+  <g fill="none" stroke="#ff1f8f" stroke-width="3" filter="url(#glowSoft)">
+    <path d="M176 352 V392 H160"/>
+    <path d="M268 352 V400"/>
+    <path d="M360 352 V392 H378"/>
+  </g>
+  <g fill="#ff1f8f">
+    <circle cx="156" cy="392" r="6"/><circle cx="268" cy="404" r="6"/><circle cx="382" cy="392" r="6"/>
+  </g>
+
+  <!-- ===== title ===== -->
+  <text x="466" y="290" font-family="Menlo, DejaVu Sans Mono, Liberation Mono, monospace"
+        font-size="86" font-weight="bold" fill="#00e5ff" filter="url(#glowTitle)"
+        letter-spacing="1">arr-stack-skills</text>
+
+  <text x="470" y="352" font-family="Menlo, DejaVu Sans Mono, Liberation Mono, monospace"
+        font-size="30" fill="#ff1f8f" filter="url(#glowSoft)"
+        letter-spacing="1">agent skills for running a real media stack</text>
+
+  <!-- ===== terminal window ===== -->
+  <g filter="url(#glowCyan)">
+    <rect x="1348" y="196" width="240" height="188" rx="14" fill="none" stroke="#00e5ff" stroke-width="6"/>
+    <path d="M1348 240 H1588" fill="none" stroke="#00e5ff" stroke-width="5"/>
+  </g>
+  <g>
+    <circle cx="1376" cy="218" r="8" fill="#ff1f8f"/>
+    <circle cx="1404" cy="218" r="8" fill="#ffc400"/>
+    <circle cx="1432" cy="218" r="8" fill="#00e5ff"/>
+  </g>
+  <g filter="url(#glowSoft)">
+    <path d="M1376 282 L1400 302 L1376 322" fill="none" stroke="#00e5ff" stroke-width="7"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="1414" y="316" width="42" height="7" rx="3.5" fill="#ff1f8f"/>
+  </g>
+  <!-- terminal stand -->
+  <g fill="none" stroke="#a3134f" stroke-width="3">
+    <path d="M1468 384 V430 H1390 L1360 460"/>
+  </g>
+  <circle cx="1360" cy="460" r="5" fill="#a3134f"/>
+</svg>

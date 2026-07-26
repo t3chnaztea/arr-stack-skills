@@ -1,0 +1,26 @@
+{
+  "name": "t3chnaztea-arr",
+  "description": "Agent skills for running a Radarr/Sonarr media stack with coding agents.",
+  "owner": {
+    "name": "tech nasty"
+  },
+  "plugins": [
+    {
+      "name": "arr",
+      "source": "./",
+      "description": "Agent skills for operating a Radarr/Sonarr media stack: connection doctrine, instance mapping, quality profiles and upgrade storms, library hygiene, the search-to-import chain, and playback-driven grab decisions.",
+      "category": "homelab",
+      "tags": [
+        "radarr",
+        "sonarr",
+        "prowlarr",
+        "plex",
+        "jellyfin",
+        "homelab",
+        "media-server",
+        "self-hosted",
+        "agent-skills"
+      ]
+    }
+  ]
+}
