@@ -92,6 +92,29 @@ undo.
 - **Nothing here downloads anything or tells you where to get it.** These
   skills operate software you already run and configure. Sourcing content is
   your business and your jurisdiction's.
+- **Keep the key out of the agent's context entirely.**
+  [docs/secrets-hygiene.md](docs/secrets-hygiene.md) is the short version of
+  how: the agent gets the capability, never the credential.
+
+---
+
+## Running alongside MCP servers
+
+MCP servers for this stack exist and are multiplying:
+[**bardesss/arr-mcp**](https://github.com/bardesss/arr-mcp) covers
+Radarr/Sonarr/Prowlarr/Bazarr and friends from one server, and
+[**dinglebear-ai/yarr**](https://github.com/dinglebear-ai/yarr) does the fleet
+in Rust. If you want typed tools your agent can call instead of writing curl,
+use one.
+
+The split: **an MCP server gives your agent the API. This gives it the
+playbook.** A tool called `update_quality_profile` will happily set
+`cutoffFormatScore` to 10000 and hand you the upgrade storm described in
+`arr-quality-profiles`; nothing in a tool schema knows that deleting a movie
+silently unmonitors it, that a host-side `ls` lies about container paths, or
+that a PUT can no-op and echo success. That judgment is transport-neutral: it
+makes the agent better over curl and over MCP tools alike. Run both. They
+compose.
 
 ---
 

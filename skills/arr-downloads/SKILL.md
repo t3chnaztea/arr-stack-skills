@@ -5,8 +5,8 @@ description: >-
   no results, releases grabbed but never downloaded, torrents stuck at zero
   peers or a few KB/s, Usenet posts that fail to repair, downloads that
   complete but never import, a VPN-wrapped client that stops working after
-  a restart, or requests from Overseerr/Jellyseerr/Ombi that show up as
-  declined or failed. Covers the search-to-import chain, indexer and
+  a restart, or requests from Seerr (or its Overseerr/Jellyseerr
+  predecessors) or Ombi that show up as declined or failed. Covers the search-to-import chain, indexer and
   download client checks, VPN port forwarding, and where to look when the
   fault is upstream of the arr entirely. Assumes arr-connect for the API
   pattern. Not for what quality to accept (arr-quality-profiles) or stuck

@@ -1,6 +1,6 @@
 {
   "name": "arr",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Agent skills for running a Radarr/Sonarr media stack: API connection doctrine and the container-path trap, the instance map that stops profile-id guessing, quality profiles and the cutoff settings that cause endless upgrade storms, monitoring drift and guarded delete-then-regrab, the search-to-import chain, and the grab decisions that make your player transcode. Distilled from years of running a real stack with coding agents.",
   "author": {
     "name": "tech nasty"

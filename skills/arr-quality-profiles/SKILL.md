@@ -232,8 +232,9 @@ before you adopt.
 Deleting and recreating profiles changes their ids. Anything holding an id
 by value now points at nothing:
 
-- Request front-ends (Overseerr, Jellyseerr, Ombi) store a default profile id
-  per server. When it goes stale, **every new request fails**, and the
+- Request front-ends store a default profile id per server. That is Seerr
+  today (Overseerr and Jellyseerr merged into it in early 2026; an Overseerr
+  install still running is archived software), or Ombi. When it goes stale, **every new request fails**, and the
   user-visible state often reads as "declined" rather than "failed". The
   server log carries the real error: adding the item failed because the
   quality profile does not exist.
